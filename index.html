@@ -219,17 +219,41 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>  
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>  
 
 </body>
-	<script>
-		function ClickedLogin(){
+	<script>				
+		var inputValue;
+		var inputPassword;
+		function ClickedLogin() {
 			Swal.fire({
-			  title: 'Figyelem!',
-			  text: 'Bejelentkezés/Regisztráció még nem elérhető!',
-			  icon: 'warning',
-			  confirmButtonText: 'Oké'
+			  title: 'Bejelentkezés',
+			  input: 'text',
+			  inputLabel: 'Írd be a felhasználóneved:',
+  			  inputValue: inputValue,
+			  icon: 'info',
+			  confirmButtonText: 'Tovább'
+			})	
+			.then(function () {
+				Swal.fire({
+				  title: 'Bejelentkezés',
+				  input: 'password',
+				  inputLabel: 'Írd be a jelszavad:',
+				  inputValue: inputPassword,
+				  icon: 'question',
+				  confirmButtonText: 'Bejelentkezés!'
+				})
+				.then(function () {
+					Swal.fire({
+					  title: 'Siker!',
+					  text: 'Sikeres bejelentkezés!',
+					  timer: 3000,
+					  icon: 'success',
+					  confirmButtonText: 'Oké'
+					})	
+			  	})
 			})
+			
 		}
 		
 		function ClickedIP(){
