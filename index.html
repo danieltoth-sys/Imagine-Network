@@ -30,22 +30,22 @@
 <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
 <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
 </head>
-<body>
+<body data-aos="fade-in">
 <!-- Main Container -->
   <!-- Navigation -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container">
       <div class="header-container d-flex align-items-center justify-content-between">
         <div class="logo">
-	  		<a href="#"><img src="images/logo.png" alt="Imagine Network" class="img-fluid">   Imagine Network</a>  
+	  		<a href="#"><img src="images/logo.png" alt="Imagine Network" class="img-fluid">  Imagine Network</a>  
         </div>
         <nav id="navbar" class="navbar">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Főoldal</a></li>
-            <li><a class="nav-link scrollto" href="#about">Rólunk</a></li>                       
+			<li><a class="nav-link scrollto" href="#about">Rólunk</a></li>
             <li><a class="nav-link scrollto" href="https://shop.imaginenetwork.hu/">Webshop</a></li>
-			<li><a class="nav-link scrollto" href="https://discord.com/invite/z8EsEfce88">Discord</a></li>
-            <li><a class="getstarted scrollto" onClick="ClickedLogin()" href="#">Bejelentkezés</a></li>
+			<li><a class="nav-link scrollto" href="https://discord.com/invite/z8EsEfce88">Discord</a></li>			
+            <li><a class="getstarted scrollto" href="#about">Kezdés</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle">&nbsp;</i>
         </nav><!-- .navbar -->
@@ -222,7 +222,21 @@
   <script src="assets/js/main.js"></script>  
 
 </body>
-	<script>				
+	<script>	
+		var delayInMilliseconds = 4000; 
+
+		setTimeout(function() {
+		  Swal.fire({
+			  title: 'Üdv!',
+			  text: 'A weboldal jelenleg fejlesztés alatt áll!',
+			  icon: 'warning',
+			  confirmButtonText: 'Értettem!',
+			  confirmButtonColor: '#ed8337',
+		      timer: 5000,
+			})	
+		}, delayInMilliseconds);
+		
+		
 		var inputValue;
 		var inputPassword;
 		function ClickedLogin() {
