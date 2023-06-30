@@ -136,7 +136,7 @@
 					  <p style="margin-top:60px;"><button class="button-box" onclick="ClickedRPG()">Tudj meg többet</button></p>
                   </div>
                 </div>				  
-                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200" onclick="ClickedOB()">
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
                   <div class="icon-box mt-4 mt-xl-0">                    
                     <h4>OneBlock</h4>
                     1 darab blokkon fogsz kezdeni, onnan kell mindent felépítened egyedül, vagy barátaiddal!
@@ -147,7 +147,7 @@
                   <div class="icon-box mt-4 mt-xl-0">                    
                     <h4>OPSurvival</h4>
                     Nagyon gyors pénz szerzés, hatalmas farmok, megannyi lehetőség, hogy te légy a leggazdagabb és a legjobb a szerveren!
-					<p style="margin-top: 60px"><button class="button-box" onclick="ClickedOB()">Tudj meg többet</button></p>
+					<p style="margin-top: 60px"><button class="button-box" onclick="ClickedNoData()">Tudj meg többet</button></p>
                   </div>					
                 </div>
               </div>
@@ -271,6 +271,10 @@
 		function ClickedRPG() {
 			window.location.href = "SurvivalRPG.html";			
 		}
+		function ClickedOB() {
+			window.location.href = "OneBlock.html";			
+		}
+		
 		function ClickedIP(){
 			var ip = "play.imaginenetwork.hu";
 			navigator.clipboard.writeText(ip);
@@ -282,7 +286,8 @@
 			  confirmButtonText: 'Oké'
 			})			
 		}
-		function ClickedOB(){			
+		
+		function ClickedNoData(){			
 			Swal.fire({
 			  title: 'Figyelem!',
 			  text: 'Ez a rész jelenleg fejlesztés alatt áll, így nem elérhető még!',
