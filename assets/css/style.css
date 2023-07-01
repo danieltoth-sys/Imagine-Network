@@ -1568,3 +1568,36 @@ section {
 	transform: scale(1.07);		
 	color: white;
 }
+.webshop-btn {
+  text-align: center;	  
+  border-radius: 25px; 
+  position: relative;  
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Raleway", sans-serif;  
+  background-color: #700aaa;
+  padding: 10px 28px; 
+  color:#fff;
+  font-size: 18px;
+  font-weight: 500;
+  width: 90%;
+  transition: all 0.3s;  
+}
+.webshop-btn:hover {
+  text-align: center;	
+  border-radius: 25px;  
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  color: #262626;
+  font-family: "Raleway", sans-serif;
+  border:solid 1px black;  
+  background: rgba(0, 0, 0, 0.2);   
+  padding: 14px 34px;
+  width: 90%;
+  transition: all 0.3s;
+}
+
+
+.webshop {
+	background-image: url("https://gcdnb.pbrd.co/images/C0Jexg8wPqhw.png?o=1");
+	position: relative;
+  	padding: 100px 0;	
+}
