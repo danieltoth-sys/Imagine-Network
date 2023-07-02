@@ -6,11 +6,12 @@ body {
 a {
   color: black;
   text-decoration: none;
-  transition: 0.3s
+  transition: 0.4s;
+  transition-timing-function: cubic-bezier(1.0, 0.4, 0.6, 1.0);
 }
 
 a:hover {
-  color: #00cc95;
+  color: darkviolet;
   text-decoration: none;
 }
 
@@ -50,6 +51,7 @@ h6 {
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
+  transition-timing-function: cubic-bezier(1.0, 0.3, 0.5, 1.0);
 }
 
 .back-to-top i {
@@ -59,13 +61,15 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #00c28e;
+  background: darkviolet;
   color: #fff;
 }
 
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+  transition: all 0.4s;
+  transition-timing-function: cubic-bezier(1.0, 0.3, 0.5, 1.0);
 }
 /*--------------------------------------------------------------
 # Type Animation
@@ -1600,4 +1604,8 @@ section {
 	background-image: url("https://gcdnb.pbrd.co/images/C0Jexg8wPqhw.png?o=1");
 	position: relative;
   	padding: 100px 0;	
+}
+
+html {
+	scroll-behavior: smooth;
 }
